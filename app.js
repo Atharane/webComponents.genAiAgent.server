@@ -19,10 +19,7 @@ app.use(express.json({ limit: "12mb" }));
 //   })
 // );
 app.use(
-  cors({
-    origin: "*",
-    credentials: true,
-  })
+  cors()
 );
 
 app.use((_, res, next) => {
